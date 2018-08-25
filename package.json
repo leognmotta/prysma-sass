@@ -1,0 +1,14 @@
+{
+  "name": "prysma",
+  "version": "1.0.0",
+  "description": "Agência Prysma website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w -r scss -o dist/css"
+  },
+  "author": "Agência Prysma",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
