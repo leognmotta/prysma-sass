@@ -1,0 +1,33 @@
+//---------------------
+//	Calling Webfonts
+//---------------------
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../webfonts/dosis-book-webfont.eot");
+  src: url("../webfonts/dosis-book-webfont.woff") format("woff"),
+    url("../webfonts/DOSIS-BOOK.TTF") format("truetype"),
+    url("../webfonts/dosis-book-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../webfonts/dosis-semibold-webfont.eot");
+  src: url("../webfonts/dosis-semibold-webfont.woff") format("woff"),
+    url("../webfonts/DOSIS-SEMIBOLD.TTF") format("truetype"),
+    url("../webfonts/dosis-semibold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DK Mandarin Whispers";
+  src: url("../webfonts/dk_mandarin_whispers-webfont.eot");
+  src: url("../webfonts/dk_mandarin_whispers-webfont.woff") format("woff"),
+    url("../webfonts/dk_mandarin_whispers-webfont.ttf") format("truetype"),
+    url("../webfonts/dk_mandarin_whispers-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}

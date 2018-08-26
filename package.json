@@ -4,7 +4,7 @@
   "description": "Agência Prysma website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w -r scss -o dist/css"
+    "sass": "node-sass --watch --recursive scss --output dist/css --source-map true"
   },
   "author": "Agência Prysma",
   "license": "ISC",
