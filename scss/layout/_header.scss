@@ -1,20 +1,15 @@
 .header-container {
-  overflow: hidden;
   background: url(../img/brand/background.png), $color-primary-light;
   background-position: center;
   background-size: cover;
-  height: 900px;
   position: relative;
-  @include mq("lg") {
-    height: 680px;
-  }
   @include mq("med") {
     height: 580px;
   }
   svg#left,
   svg#right {
     position: absolute;
-    width: 51%;
+    width: 54%;
     height: auto;
     fill: $color-secondary;
   }

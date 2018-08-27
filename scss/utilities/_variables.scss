@@ -6,6 +6,7 @@
 $white: #fff;
 $color-primary: #3e9995;
 $color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 5%);
 $color-secondary: #121212;
 $footer-color: #000000;
 
@@ -20,8 +21,8 @@ $gutter: 10px;
 
 // Breakpoints
 $breakpoints: (
-  "xs": 575px,
-  "sm": 374px,
+  "xs": 380px,
+  "sm": 490px,
   "med": 826px,
   "lg": 1080px
 );
