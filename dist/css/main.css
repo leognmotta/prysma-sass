@@ -492,10 +492,10 @@ header {
     height: auto;
     fill: #121212; }
   .header-container svg#left {
-    bottom: -1px;
+    bottom: -3px;
     left: 0; }
   .header-container svg#right {
-    bottom: -1px;
+    bottom: -3px;
     right: 0; }
 
 #home {

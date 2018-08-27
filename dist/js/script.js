@@ -13,7 +13,6 @@ menuBtn.addEventListener("click", function() {
     menuBtn.classList.add("close");
     menu.classList.remove("hide");
     menu.classList.add("show");
-    home.classList.add("onScroll-menu");
     // set Menu state
     showMenu = true;
   } else {
@@ -30,7 +29,7 @@ var header = document.getElementsByTagName("header")[0];
 var home = document.getElementById("home");
 
 window.onscroll = function() {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 50) {
     header.classList.add("sticky");
     home.classList.add("onScroll-menu");
   } else {
