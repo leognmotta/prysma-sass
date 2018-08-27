@@ -7,7 +7,16 @@ body {
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.62; }
+  line-height: 1.4;
+  background-color: #121212;
+  position: relative; }
+  @media (max-width: 374px) {
+    body {
+      font-size: 16px; } }
+
+.container {
+  max-width: 60em;
+  margin: 0 auto; }
 
 h1,
 h2,
@@ -16,6 +25,24 @@ h4,
 h5,
 h6 {
   font-family: "DK Mandarin Whispers"; }
+
+h1 {
+  font-size: 4.1em;
+  text-align: center;
+  line-height: 0.5; }
+  h1 span {
+    line-height: 1.7;
+    font-size: 34px;
+    color: #121212; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+li {
+  list-style: none; }
 
 p {
   margin: 1em 0; }
@@ -40,14 +67,6 @@ html {
  */
 body {
   margin: 0; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -319,6 +338,16 @@ template {
 [hidden] {
   display: none; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: "Dosis";
   src: url("../webfonts/dosis-book-webfont.eot");
@@ -339,6 +368,174 @@ template {
   src: url("../webfonts/dk_mandarin_whispers-webfont.woff") format("woff"), url("../webfonts/dk_mandarin_whispers-webfont.ttf") format("truetype"), url("../webfonts/dk_mandarin_whispers-webfont.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.4);
+  padding: 0;
+  z-index: 3; }
+  .sticky .container .logo embed {
+    width: 110px;
+    height: auto; }
+    @media (max-width: 826px) {
+      .sticky .container .logo embed {
+        width: 90px; } }
+
+.onScroll-menu {
+  padding-top: 7em; }
+
+@media (max-width: 826px) {
+  .menu-branding {
+    width: 78%;
+    overflow: hidden; } }
+
+.menu-branding .logo {
+  margin: 10px; }
+  .menu-branding .logo embed {
+    width: 5.5em;
+    height: auto; }
+
+header {
+  padding: 1em 1.5em; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 826px) {
+      header .container {
+        flex-wrap: wrap;
+        flex: 1 50%; } }
+
+.menu-btn {
+  position: absolute;
+  position: fixed;
+  z-index: 100;
+  right: 25px;
+  top: 35px;
+  cursor: pointer;
+  display: none; }
+  @media (max-width: 826px) {
+    .menu-btn {
+      display: block;
+      margin-left: 23px; } }
+  .menu-btn .btn-line {
+    margin-left: 100%;
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #fff; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+@media (max-width: 826px) {
+  .show {
+    display: block; }
+  .hide {
+    display: none; } }
+
+.menu {
+  margin: 10px; }
+  .menu .menu-nav {
+    display: flex;
+    text-transform: uppercase; }
+    @media (max-width: 826px) {
+      .menu .menu-nav {
+        position: absolute;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(18, 18, 18, 0.98);
+        flex-direction: column; } }
+    .menu .menu-nav .nav-item {
+      line-height: 1;
+      padding: 0 0.75em;
+      border-right: 1px solid #fff; }
+      @media (max-width: 826px) {
+        .menu .menu-nav .nav-item {
+          border: none;
+          padding: 10px 50px;
+          margin: 10px; } }
+      .menu .menu-nav .nav-item:hover a {
+        color: #cccccc; }
+      .menu .menu-nav .nav-item:last-of-type {
+        border: none; }
+
+.header-container {
+  overflow: hidden;
+  background: url(../img/brand/background.png), #51b9b4;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  position: relative; }
+  @media (max-width: 1080px) {
+    .header-container {
+      height: 680px; } }
+  @media (max-width: 826px) {
+    .header-container {
+      height: 580px; } }
+  .header-container svg#left,
+  .header-container svg#right {
+    position: absolute;
+    width: 51%;
+    height: auto;
+    fill: #121212; }
+  .header-container svg#left {
+    bottom: -1px;
+    left: 0; }
+  .header-container svg#right {
+    bottom: -1px;
+    right: 0; }
+
+#home {
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 1080px) {
+    #home h1 {
+      font-size: 3.075em; }
+      #home h1 span {
+        font-size: 25.5px; } }
+  @media (max-width: 374px) {
+    #home h1 {
+      font-size: 2.6135em; }
+      #home h1 span {
+        font-size: 21px; } }
+  #home embed {
+    width: 50%;
+    height: auto;
+    margin: 10px; }
+    @media (max-width: 826px) {
+      #home embed {
+        display: none; } }
+  #home div {
+    margin: 10px;
+    width: 45%;
+    height: auto;
+    text-align: center; }
+    @media (max-width: 826px) {
+      #home div {
+        width: 100%;
+        margin: 0; } }
+    #home div p {
+      margin: 0 auto;
+      padding-top: 1em;
+      width: 16em;
+      border-top: 1px solid #fff; }
+  @media (max-width: 826px) {
+    #home {
+      justify-content: center;
+      align-items: center; } }
 
 /*# sourceMappingURL=main.css.map */
 

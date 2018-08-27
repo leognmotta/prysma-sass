@@ -3,7 +3,25 @@
 // ======================================
 
 // Colors
+$white: #fff;
 $color-primary: #3e9995;
-$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
 $color-secondary: #121212;
 $footer-color: #000000;
+
+// Fonts
+$font-stack-primary: "Dosis", sans-serif;
+$font-stack-secondary: "DK Mandarin Whispers";
+$font-size: 20px;
+$font-size-mobile: 16px;
+
+// Layout
+$gutter: 10px;
+
+// Breakpoints
+$breakpoints: (
+  "xs": 575px,
+  "sm": 374px,
+  "med": 826px,
+  "lg": 1080px
+);

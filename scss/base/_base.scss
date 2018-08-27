@@ -7,13 +7,22 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: $font-stack-primary;
   color: #fff;
-  font-size: 20px;
+  font-size: $font-size;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.62;
+  line-height: 1.4;
   background-color: $color-secondary;
+  position: relative;
+  @include mq("sm") {
+    font-size: $font-size-mobile;
+  }
+}
+
+.container {
+  max-width: px-to-em(1200px);
+  margin: 0 auto;
 }
 
 h1,
@@ -22,7 +31,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DK Mandarin Whispers";
+  font-family: $font-stack-secondary;
+}
+
+h1 {
+  font-size: px-to-em(82px);
+  text-align: center;
+  line-height: 0.5;
+  span {
+    line-height: 1.7;
+    font-size: 34px;
+    color: $color-secondary;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-weight: bold;
+  font-size: px-to-em(24px);
+}
+
+li {
+  list-style: none;
 }
 
 p {

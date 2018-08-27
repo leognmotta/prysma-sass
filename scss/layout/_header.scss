@@ -1,0 +1,81 @@
+.header-container {
+  overflow: hidden;
+  background: url(../img/brand/background.png), $color-primary-light;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  position: relative;
+  @include mq("lg") {
+    height: 680px;
+  }
+  @include mq("med") {
+    height: 580px;
+  }
+  svg#left,
+  svg#right {
+    position: absolute;
+    width: 51%;
+    height: auto;
+    fill: $color-secondary;
+  }
+  svg#left {
+    bottom: -1px;
+    left: 0;
+  }
+  svg#right {
+    bottom: -1px;
+    right: 0;
+  }
+}
+
+#home {
+  @include flexy($dir: row);
+
+  h1 {
+    @include mq("lg") {
+      font-size: px-to-em(61.5px);
+      span {
+        font-size: 25.5px;
+      }
+    }
+
+    @include mq("sm") {
+      font-size: px-to-em(52.27px);
+      span {
+        font-size: 21px;
+      }
+    }
+  }
+
+  embed {
+    width: 50%;
+    height: auto;
+    margin: $gutter;
+    @include mq("med") {
+      display: none;
+    }
+  }
+
+  div {
+    @include mq("med") {
+      width: 100%;
+      margin: 0;
+    }
+    margin: $gutter;
+    width: 45%;
+    height: auto;
+    text-align: center;
+
+    p {
+      margin: 0 auto;
+      padding-top: px-to-em(20px);
+      width: px-to-em(320px);
+      border-top: 1px solid $white;
+    }
+  }
+
+  @include mq("med") {
+    justify-content: center;
+    align-items: center;
+  }
+}
