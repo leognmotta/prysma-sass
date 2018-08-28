@@ -1,14 +1,26 @@
 #service {
   h2 {
-    margin: px-to-em(40px) 0;
-    font-size: px-to-em(34px);
+    margin: px-to-em(30px) 0;
+    font-size: px-to-em(44px);
     text-align: center;
     line-height: 1.05;
-    padding: 1em;
+    padding: 0 0.6em;
 
     span {
       color: $color-primary-dark;
-      font-size: px-to-em(28px);
+      font-size: px-to-em(36px);
+      @include mq("med") {
+        font-size: px-to-em(32px);
+      }
+      @include mq("sm") {
+        font-size: px-to-em(28px);
+      }
+    }
+    @include mq("med") {
+      font-size: px-to-em(38px);
+    }
+    @include mq("sm") {
+      font-size: px-to-em(34px);
     }
   }
 }

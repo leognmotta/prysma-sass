@@ -1,0 +1,20 @@
+.marcar-reuniao {
+  background: 0;
+  border: solid 1px $white;
+  color: $white;
+  padding: 0.5em 0.8em;
+  border-radius: 10px;
+  font-family: $font-stack-secondary;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, border-color 0.4s ease-in-out;
+  &:hover {
+    border-color: $color-secondary;
+    color: $color-secondary;
+  }
+  @include mq("meeting") {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+  }
+}

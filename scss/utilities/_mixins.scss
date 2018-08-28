@@ -19,7 +19,7 @@
   @if $value == null {
     @error "#{$break} is not a valid breakpoint name";
   } @else if $value < $sm {
-    @media (min-width: $value) {
+    @media (max-width: $value) {
       @content;
     }
   } @else {

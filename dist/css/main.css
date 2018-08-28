@@ -26,6 +26,12 @@ h5,
 h6 {
   font-family: "DK Mandarin Whispers"; }
 
+.separator {
+  font-family: "DK Mandarin Whispers"; }
+  .separator p {
+    color: #fff;
+    font-size: 1.5em; }
+
 h1 {
   font-size: 4.1em;
   text-align: center;
@@ -369,10 +375,29 @@ img {
   font-weight: bold;
   font-style: normal; }
 
+.marcar-reuniao {
+  background: 0;
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 0.5em 0.8em;
+  border-radius: 10px;
+  font-family: "DK Mandarin Whispers";
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, border-color 0.4s ease-in-out; }
+  .marcar-reuniao:hover {
+    border-color: #121212;
+    color: #121212; }
+  @media (max-width: 590px) {
+    .marcar-reuniao {
+      display: block;
+      margin: 0 auto;
+      width: 250px; } }
+
 .sticky {
   position: fixed;
   width: 100%;
-  background: rgba(18, 18, 18, 0.4);
+  background: rgba(18, 18, 18, 0.9);
   padding: 0;
   z-index: 3; }
   .sticky .container .logo embed {
@@ -533,14 +558,26 @@ header {
       align-items: center; } }
 
 #service h2 {
-  margin: 2em 0;
-  font-size: 1.7em;
+  margin: 1.5em 0;
+  font-size: 2.2em;
   text-align: center;
   line-height: 1.05;
-  padding: 1em; }
+  padding: 0 0.6em; }
   #service h2 span {
     color: #378783;
-    font-size: 1.4em; }
+    font-size: 1.8em; }
+    @media (max-width: 826px) {
+      #service h2 span {
+        font-size: 1.6em; } }
+    @media (max-width: 490px) {
+      #service h2 span {
+        font-size: 1.4em; } }
+  @media (max-width: 826px) {
+    #service h2 {
+      font-size: 1.9em; } }
+  @media (max-width: 490px) {
+    #service h2 {
+      font-size: 1.7em; } }
 
 .service-container {
   display: flex;
@@ -585,6 +622,120 @@ header {
         bottom: 1px; }
       .service-container .group2 .service-box img {
         width: 64px; }
+
+#meeting {
+  margin-top: 230px;
+  background: #3e9995;
+  height: 350px;
+  padding: 0 0.5em; }
+  @media (max-width: 1080px) {
+    #meeting {
+      margin-top: 140px; } }
+  @media (max-width: 826px) {
+    #meeting {
+      margin-top: 60px; } }
+  @media (max-width: 590px) {
+    #meeting {
+      height: auto; } }
+
+.meeting-container {
+  text-align: center;
+  margin-right: 25%;
+  padding: 5px 0;
+  color: #fff;
+  padding: 2em 0;
+  position: relative;
+  max-width: 1400px; }
+  .meeting-container .suit2 {
+    position: absolute;
+    width: auto;
+    bottom: -5px;
+    right: -20%; }
+    @media (max-width: 1200px) {
+      .meeting-container .suit2 {
+        right: -30%; } }
+    @media (max-width: 1080px) {
+      .meeting-container .suit2 {
+        right: -34%;
+        bottom: -39px; } }
+    .meeting-container .suit2 embed {
+      height: 440px;
+      width: auto; }
+      @media (max-width: 1080px) {
+        .meeting-container .suit2 embed {
+          height: 400px; } }
+      @media (max-width: 826px) {
+        .meeting-container .suit2 embed {
+          display: none; } }
+  .meeting-container .arrow {
+    position: absolute;
+    top: -50px;
+    left: 15%; }
+    @media (max-width: 1200px) {
+      .meeting-container .arrow {
+        left: 8%; } }
+    @media (max-width: 590px) {
+      .meeting-container .arrow {
+        display: none; } }
+  @media (max-width: 826px) {
+    .meeting-container {
+      margin-right: 0; } }
+  .meeting-container .phone-number {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 0.5em 0.8em;
+    position: relative; }
+    @media (max-width: 590px) {
+      .meeting-container .phone-number {
+        display: block;
+        margin: 0 auto;
+        width: 400px; } }
+    @media (max-width: 490px) {
+      .meeting-container .phone-number {
+        width: 300px; } }
+    @media (max-width: 380px) {
+      .meeting-container .phone-number {
+        width: 250px; } }
+    .meeting-container .phone-number span {
+      display: inline-block;
+      color: #fff; }
+      .meeting-container .phone-number span:nth-child(1) {
+        margin-right: 30px; }
+    .meeting-container .phone-number .wpp-container {
+      position: absolute;
+      top: -14px;
+      right: 35.53%;
+      background: #3e9995;
+      padding: 0 30px; }
+      @media (max-width: 590px) {
+        .meeting-container .phone-number .wpp-container {
+          right: 40%; } }
+      @media (max-width: 490px) {
+        .meeting-container .phone-number .wpp-container {
+          right: 36%;
+          top: -18px; } }
+      @media (max-width: 380px) {
+        .meeting-container .phone-number .wpp-container {
+          right: 34%; } }
+      .meeting-container .phone-number .wpp-container img {
+        height: auto;
+        width: 20px; }
+  .meeting-container .separator {
+    display: inline-block;
+    margin: 0 30px; }
+  .meeting-container span {
+    color: #121212; }
+  .meeting-container h2 {
+    margin-top: 0;
+    font-size: 3em;
+    line-height: 1; }
+    @media (max-width: 1080px) {
+      .meeting-container h2 {
+        font-size: 2.4em; } }
+    @media (max-width: 826px) {
+      .meeting-container h2 {
+        font-size: 2.1em; } }
 
 /*# sourceMappingURL=main.css.map */
 

@@ -34,6 +34,14 @@ h6 {
   font-family: $font-stack-secondary;
 }
 
+.separator {
+  font-family: $font-stack-secondary;
+  p {
+    color: $white;
+    font-size: px-to-em(30px);
+  }
+}
+
 h1 {
   font-size: px-to-em(82px);
   text-align: center;

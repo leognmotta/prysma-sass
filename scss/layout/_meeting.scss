@@ -1,0 +1,134 @@
+#meeting {
+  margin-top: 230px;
+  background: $color-primary;
+  height: 350px;
+  padding: 0 0.5em;
+  @include mq("lg") {
+    margin-top: 140px;
+  }
+  @include mq("med") {
+    margin-top: 60px;
+  }
+  @include mq("meeting") {
+    height: auto;
+  }
+}
+
+.meeting-container {
+  text-align: center;
+  margin-right: 25%;
+  padding: 5px 0;
+  color: $white;
+  padding: 2em 0;
+  position: relative;
+  max-width: 1400px;
+
+  .suit2 {
+    position: absolute;
+    width: auto;
+    bottom: -5px;
+    right: -20%;
+    @include mq("xl") {
+      right: -30%;
+    }
+    @include mq("lg") {
+      right: -34%;
+      bottom: -39px;
+    }
+
+    embed {
+      height: 440px;
+      width: auto;
+      @include mq("lg") {
+        height: 400px;
+      }
+      @include mq("med") {
+        display: none;
+      }
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: -50px;
+    left: 15%;
+    @include mq("xl") {
+      left: 8%;
+    }
+    @include mq("meeting") {
+      display: none;
+    }
+  }
+
+  @include mq("med") {
+    margin-right: 0;
+  }
+
+  .phone-number {
+    display: inline-block;
+    border: 1px solid $white;
+    border-radius: 10px;
+    padding: 0.5em 0.8em;
+    position: relative;
+    @include mq("meeting") {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+    }
+    @include mq("sm") {
+      width: 300px;
+    }
+    @include mq("xs") {
+      width: 250px;
+    }
+    span {
+      display: inline-block;
+      color: $white;
+      &:nth-child(1) {
+        margin-right: 30px;
+      }
+    }
+    .wpp-container {
+      position: absolute;
+      top: -14px;
+      right: 35.53%;
+      background: $color-primary;
+      padding: 0 30px;
+      @include mq("meeting") {
+        right: 40%;
+      }
+      @include mq("sm") {
+        right: 36%;
+        top: -18px;
+      }
+      @include mq("xs") {
+        right: 34%;
+      }
+      img {
+        height: auto;
+        width: 20px;
+      }
+    }
+  }
+
+  .separator {
+    display: inline-block;
+    margin: 0 30px;
+  }
+
+  span {
+    color: $color-secondary;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: px-to-em(60px);
+    line-height: 1;
+    @include mq("lg") {
+      font-size: px-to-em(48px);
+    }
+    @include mq("med") {
+      font-size: px-to-em(42px);
+    }
+  }
+}
