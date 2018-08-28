@@ -6,6 +6,8 @@ var menuNav = document.querySelector(".menu-nav");
 var showMenu = false;
 
 // Declare variables for OnScroll NavBar
+var header = document.getElementsByTagName("header")[0];
+var home = document.getElementById("home");
 
 // responsive menu event function
 menuBtn.addEventListener("click", function() {
@@ -25,9 +27,6 @@ menuBtn.addEventListener("click", function() {
 });
 
 // onScroll navBar event function
-var header = document.getElementsByTagName("header")[0];
-var home = document.getElementById("home");
-
 window.onscroll = function() {
   if (window.pageYOffset > 50) {
     header.classList.add("sticky");

@@ -1,0 +1,67 @@
+#portfolio {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+
+  h2 {
+    font-size: px-to-em(60px);
+    @include mq("med") {
+      font-size: px-to-em(46px);
+    }
+  }
+}
+
+.portfolio-container {
+  @include flexy($wrap: wrap, $just: center);
+
+  @include mq("xxl") {
+    .col-1 {
+      display: none;
+    }
+  }
+
+  @include mq("med") {
+    .col-1 {
+      display: block;
+    }
+  }
+
+  @include mq("sm") {
+    .col-1,
+    .col-2,
+    .col-3 {
+      width: 95%;
+      height: auto;
+      img {
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+      }
+    }
+  }
+
+  .col-2 {
+    .beer {
+      height: 330px;
+      width: 410px;
+      @include mq("sm") {
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+      }
+    }
+  }
+
+  .col-3 {
+    .cross {
+      height: 271px;
+      width: 409px;
+      @include mq("sm") {
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+      }
+    }
+  }
+}

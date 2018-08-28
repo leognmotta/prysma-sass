@@ -737,6 +737,56 @@ header {
       .meeting-container h2 {
         font-size: 2.1em; } }
 
+#portfolio {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em; }
+  #portfolio h2 {
+    font-size: 3em; }
+    @media (max-width: 826px) {
+      #portfolio h2 {
+        font-size: 2.3em; } }
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (max-width: 1285px) {
+    .portfolio-container .col-1 {
+      display: none; } }
+  @media (max-width: 826px) {
+    .portfolio-container .col-1 {
+      display: block; } }
+  @media (max-width: 490px) {
+    .portfolio-container .col-1,
+    .portfolio-container .col-2,
+    .portfolio-container .col-3 {
+      width: 95%;
+      height: auto; }
+      .portfolio-container .col-1 img,
+      .portfolio-container .col-2 img,
+      .portfolio-container .col-3 img {
+        margin: 0 auto;
+        width: 95%;
+        height: auto; } }
+  .portfolio-container .col-2 .beer {
+    height: 330px;
+    width: 410px; }
+    @media (max-width: 490px) {
+      .portfolio-container .col-2 .beer {
+        margin: 0 auto;
+        width: 95%;
+        height: auto; } }
+  .portfolio-container .col-3 .cross {
+    height: 271px;
+    width: 409px; }
+    @media (max-width: 490px) {
+      .portfolio-container .col-3 .cross {
+        margin: 0 auto;
+        width: 95%;
+        height: auto; } }
+
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
