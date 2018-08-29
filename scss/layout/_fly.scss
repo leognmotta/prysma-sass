@@ -1,0 +1,86 @@
+#fly {
+  position: relative;
+  padding: 1em;
+  text-align: right;
+  max-width: 1000px;
+  margin: 0 auto;
+  @include mq("med") {
+    padding-top: 240px;
+    text-align: center;
+  }
+
+  h2 {
+    display: inline-block;
+    line-height: 0.8;
+    font-size: px-to-em(92px);
+    @include mq("lg") {
+      font-size: px-to-em(78px);
+    }
+    @include mq("xs") {
+      font-size: px-to-em(64px);
+    }
+  }
+
+  .marcar-reuniao {
+    font-family: $font-stack-primary;
+    font-size: px-to-em(32px);
+    @include mq("lg") {
+      font-size: px-to-em(27px);
+    }
+    @include mq("med") {
+      margin-right: 0;
+    }
+    @include mq("xs") {
+      font-size: px-to-em(22px);
+    }
+
+    display: inline-block;
+    margin-right: 10%;
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
+
+.hero-color {
+  color: $color-primary;
+}
+
+.left {
+  font-size: px-to-em(10px);
+  display: inline-block;
+  margin-right: 85%;
+}
+
+.right {
+  @include mq("med") {
+    margin-right: 0;
+    margin-left: 48%;
+  }
+  font-size: px-to-em(10px);
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.suit-hero {
+  @include mq("xl") {
+    left: 3%;
+  }
+  @include mq("med") {
+    height: 440px;
+    left: 20%;
+  }
+  @include mq("xs") {
+    height: 380px;
+    left: 10%;
+    top: -125px;
+  }
+
+  position: absolute;
+  height: 640px;
+  width: auto;
+  left: -3%;
+  top: -140px;
+}

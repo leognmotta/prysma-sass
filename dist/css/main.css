@@ -694,7 +694,7 @@ header {
     @media (max-width: 490px) {
       .meeting-container .phone-number {
         width: 300px; } }
-    @media (max-width: 380px) {
+    @media (max-width: 392px) {
       .meeting-container .phone-number {
         width: 250px; } }
     .meeting-container .phone-number span {
@@ -715,7 +715,7 @@ header {
         .meeting-container .phone-number .wpp-container {
           right: 36%;
           top: -18px; } }
-      @media (max-width: 380px) {
+      @media (max-width: 392px) {
         .meeting-container .phone-number .wpp-container {
           right: 34%; } }
       .meeting-container .phone-number .wpp-container img {
@@ -812,6 +812,80 @@ header {
 .owl-carousel .owl-item embed {
   width: auto;
   height: 100%; }
+
+#fly {
+  position: relative;
+  padding: 1em;
+  text-align: right;
+  max-width: 1000px;
+  margin: 0 auto; }
+  @media (max-width: 826px) {
+    #fly {
+      padding-top: 240px;
+      text-align: center; } }
+  #fly h2 {
+    display: inline-block;
+    line-height: 0.8;
+    font-size: 4.6em; }
+    @media (max-width: 1080px) {
+      #fly h2 {
+        font-size: 3.9em; } }
+    @media (max-width: 392px) {
+      #fly h2 {
+        font-size: 3.2em; } }
+  #fly .marcar-reuniao {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.6em;
+    display: inline-block;
+    margin-right: 10%; }
+    @media (max-width: 1080px) {
+      #fly .marcar-reuniao {
+        font-size: 1.35em; } }
+    @media (max-width: 826px) {
+      #fly .marcar-reuniao {
+        margin-right: 0; } }
+    @media (max-width: 392px) {
+      #fly .marcar-reuniao {
+        font-size: 1.1em; } }
+    #fly .marcar-reuniao:hover {
+      color: #e8e8e8;
+      border-color: #e8e8e8; }
+
+.hero-color {
+  color: #3e9995; }
+
+.left {
+  font-size: 0.5em;
+  display: inline-block;
+  margin-right: 85%; }
+
+.right {
+  font-size: 0.5em;
+  display: inline-block;
+  margin-right: 2%; }
+  @media (max-width: 826px) {
+    .right {
+      margin-right: 0;
+      margin-left: 48%; } }
+
+.suit-hero {
+  position: absolute;
+  height: 640px;
+  width: auto;
+  left: -3%;
+  top: -140px; }
+  @media (max-width: 1200px) {
+    .suit-hero {
+      left: 3%; } }
+  @media (max-width: 826px) {
+    .suit-hero {
+      height: 440px;
+      left: 20%; } }
+  @media (max-width: 392px) {
+    .suit-hero {
+      height: 380px;
+      left: 10%;
+      top: -125px; } }
 
 /*# sourceMappingURL=main.css.map */
 
