@@ -29,7 +29,7 @@ h6 {
 .separator {
   font-family: "DK Mandarin Whispers"; }
   .separator p {
-    color: #fff;
+    color: #e8e8e8;
     font-size: 1.5em; }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #e8e8e8;
   font-weight: bold;
   font-size: 1.2em; }
 
@@ -377,8 +377,8 @@ img {
 
 .marcar-reuniao {
   background: 0;
-  border: solid 1px #fff;
-  color: #fff;
+  border: solid 1px #e8e8e8;
+  color: #e8e8e8;
   padding: 0.5em 0.8em;
   border-radius: 10px;
   font-family: "DK Mandarin Whispers";
@@ -449,7 +449,7 @@ header {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background-color: #fff; }
+    background-color: #e8e8e8; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -486,14 +486,14 @@ header {
     .menu .menu-nav .nav-item {
       line-height: 1;
       padding: 0 0.75em;
-      border-right: 1px solid #fff; }
+      border-right: 1px solid #e8e8e8; }
       @media (max-width: 826px) {
         .menu .menu-nav .nav-item {
           border: none;
           padding: 10px 50px;
           margin: 10px; } }
       .menu .menu-nav .nav-item:hover a {
-        color: #cccccc; }
+        color: #b5b5b5; }
       .menu .menu-nav .nav-item:last-of-type {
         border: none; }
 
@@ -551,7 +551,7 @@ header {
       margin: 0 auto;
       padding-top: 1em;
       width: 16em;
-      border-top: 1px solid #fff; }
+      border-top: 1px solid #e8e8e8; }
   @media (max-width: 826px) {
     #home {
       justify-content: center;
@@ -612,7 +612,7 @@ header {
       .service-container .group2 .service-box::before {
         content: "";
         background: none;
-        border: 2px solid #fff;
+        border: 2px solid #e8e8e8;
         border-radius: 5px;
         display: block;
         position: absolute;
@@ -642,7 +642,7 @@ header {
   text-align: center;
   margin-right: 25%;
   padding: 5px 0;
-  color: #fff;
+  color: #e8e8e8;
   padding: 2em 0;
   position: relative;
   max-width: 1400px; }
@@ -682,7 +682,7 @@ header {
       margin-right: 0; } }
   .meeting-container .phone-number {
     display: inline-block;
-    border: 1px solid #fff;
+    border: 1px solid #e8e8e8;
     border-radius: 10px;
     padding: 0.5em 0.8em;
     position: relative; }
@@ -699,7 +699,7 @@ header {
         width: 250px; } }
     .meeting-container .phone-number span {
       display: inline-block;
-      color: #fff; }
+      color: #e8e8e8; }
       .meeting-container .phone-number span:nth-child(1) {
         margin-right: 30px; }
     .meeting-container .phone-number .wpp-container {
@@ -786,6 +786,32 @@ header {
         margin: 0 auto;
         width: 95%;
         height: auto; } }
+
+#costumers {
+  background: #e8e8e8;
+  padding: 1em;
+  margin: 100px 0; }
+  #costumers .costumers-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em; }
+  #costumers h2 {
+    font-size: 3em;
+    margin: 40px 0;
+    text-align: center;
+    color: #121212; }
+    @media (max-width: 826px) {
+      #costumers h2 {
+        font-size: 2.3em; } }
+
+.owl-carousel .owl-stage {
+  display: flex; }
+
+.owl-carousel .owl-item img,
+.owl-carousel .owl-item embed {
+  width: auto;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
 

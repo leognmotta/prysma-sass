@@ -36,3 +36,36 @@ window.onscroll = function() {
     home.classList.remove("onScroll-menu");
   }
 };
+
+// #################################
+
+var owl = $(".owl-carousel");
+owl.owlCarousel({
+  center: true,
+  items: 5,
+  loop: true,
+  margin: 1,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 3,
+      nav: false
+    },
+    600: {
+      items: 4,
+      nav: false
+    },
+    1000: {
+      items: 5
+    }
+  },
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplayHoverPause: true
+});
+$(".play").on("click", function() {
+  owl.trigger("play.owl.autoplay", [1000]);
+});
+$(".stop").on("click", function() {
+  owl.trigger("stop.owl.autoplay");
+});

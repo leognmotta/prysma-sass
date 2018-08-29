@@ -1,0 +1,32 @@
+#costumers {
+  background: $white;
+  padding: 1em;
+  margin: 100px 0;
+
+  .costumers-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  h2 {
+    font-size: px-to-em(60px);
+    @include mq("med") {
+      font-size: px-to-em(46px);
+    }
+    margin: 40px 0;
+    text-align: center;
+    color: $color-secondary;
+  }
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-carousel .owl-item img,
+.owl-carousel .owl-item embed {
+  width: auto;
+  height: 100%;
+}
