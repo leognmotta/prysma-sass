@@ -10,6 +10,16 @@
   }
 
   h2 {
+    .right {
+      display: inline-block;
+      transform: translateY(-30px);
+      @include mq("sm") {
+        transform: translateY(-22px);
+      }
+      @include mq("xs") {
+        transform: translateY(-18px);
+      }
+    }
     display: inline-block;
     line-height: 0.8;
     font-size: px-to-em(92px);
@@ -68,6 +78,10 @@
   @include mq("xl") {
     left: 3%;
   }
+  @include mq("suit-hero") {
+    left: 3%;
+    height: 740px;
+  }
   @include mq("med") {
     height: 440px;
     left: 20%;
@@ -79,8 +93,8 @@
   }
 
   position: absolute;
-  height: 640px;
+  height: 840px;
   width: auto;
-  left: -3%;
+  left: 0;
   top: -140px;
 }
