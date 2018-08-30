@@ -6,11 +6,14 @@ footer {
   }
   @include mq("med") {
     margin-top: 4em;
+    width: 100%;
+    max-width: 100%;
   }
 
   .footer-container {
     @include mq("meeting") {
       flex-wrap: wrap;
+      width: 100%;
       .contact,
       .logo,
       .icons {
@@ -28,17 +31,6 @@ footer {
 
       .contact {
         order: 3;
-      }
-    }
-
-    @include mq("xs") {
-      flex-direction: column;
-      .contact {
-        display: block;
-        width: 100%;
-        p {
-          width: 100%;
-        }
       }
     }
 
@@ -91,6 +83,17 @@ footer {
   }
 
   .contact {
+    @include mq("meeting") {
+      flex-direction: column;
+      flex: 1 100%;
+      .contact {
+        display: block;
+        width: 100%;
+        p {
+          width: 100%;
+        }
+      }
+    }
     font-size: px-to-em(16px);
     p {
       text-align: center;
