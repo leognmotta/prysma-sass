@@ -30,12 +30,24 @@ footer {
       .contact {
         display: block;
         width: 100%;
+        p {
+          width: 100%;
+        }
       }
     }
 
+    .contact,
+    .logo,
+    .icons {
+      width: 33.33%;
+    }
+
+    @include mq("meeting") {
+      background: none;
+    }
     background: url(../img/brand/triangle.svg);
     background-repeat: no-repeat;
-    background-position: left 30.5vw bottom 50%;
+    background-position: center;
     background-size: 300px 300px;
 
     display: flex;
@@ -46,18 +58,30 @@ footer {
   }
 
   .icons {
-    display: flex;
-    img {
-      margin: 10px;
-      width: 40px;
-      height: auto;
-      cursor: pointer;
+    div {
+      display: flex;
+      img {
+        display: inline-block;
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        &:nth-child(1) {
+          margin-left: auto;
+          margin-right: 10px;
+        }
+        &:nth-child(2) {
+          margin-right: auto;
+          margin-left: 10px;
+        }
+      }
     }
   }
 
   .logo embed {
     width: 125px;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .contact {
