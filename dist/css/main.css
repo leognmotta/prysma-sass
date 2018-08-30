@@ -848,8 +848,8 @@ header {
       #fly .marcar-reuniao {
         font-size: 1.1em; } }
     #fly .marcar-reuniao:hover {
-      color: #e8e8e8;
-      border-color: #e8e8e8; }
+      color: #3e9995;
+      border-color: #3e9995; }
 
 .hero-color {
   color: #3e9995; }
@@ -886,6 +886,58 @@ header {
       height: 380px;
       left: 10%;
       top: -125px; } }
+
+footer {
+  background: #000;
+  margin-top: 4em; }
+  footer .footer-container {
+    background: url(../img/brand/triangle.svg);
+    background-repeat: no-repeat;
+    background-position: left 30.5vw bottom 50%;
+    background-size: 300px 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto; }
+    @media (max-width: 590px) {
+      footer .footer-container {
+        flex-wrap: wrap; }
+        footer .footer-container .contact,
+        footer .footer-container .logo,
+        footer .footer-container .icons {
+          margin: 15px;
+          width: 40%; }
+        footer .footer-container .logo {
+          order: 1; }
+        footer .footer-container .icons {
+          order: 2; }
+        footer .footer-container .contact {
+          order: 3; } }
+    @media (max-width: 392px) {
+      footer .footer-container {
+        flex-direction: column; }
+        footer .footer-container .contact {
+          display: block;
+          width: 100%; } }
+  footer .icons {
+    display: flex; }
+    footer .icons img {
+      margin: 10px;
+      width: 40px;
+      height: auto;
+      cursor: pointer; }
+  footer .logo embed {
+    width: 125px;
+    height: auto; }
+  footer .contact {
+    font-size: 0.8em; }
+    footer .contact p {
+      text-align: center; }
+      footer .contact p span {
+        color: #3e9995;
+        font-size: 1.3em;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
 
