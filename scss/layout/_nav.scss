@@ -87,7 +87,6 @@ header {
     }
   }
 }
-
 @include mq("med") {
   .show {
     display: block;

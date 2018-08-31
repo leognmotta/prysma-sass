@@ -2,6 +2,10 @@
 var menuBtn = document.querySelector(".menu-btn");
 var menu = document.querySelector(".menu");
 var menuNav = document.querySelector(".menu-nav");
+// Form buttons
+var menuBtnForm = document.querySelector(".menu-btn-form");
+var emailForm = document.getElementById("email-form");
+var meetingBtn = document.querySelectorAll(".marcar-reuniao");
 // Initial state of showMenu
 var showMenu = false;
 
@@ -37,6 +41,17 @@ window.onscroll = function() {
   }
 };
 
+// Close email form function
+menuBtnForm.addEventListener("click", function() {
+  emailForm.classList.add("hide-form");
+});
+
+for (var i = 0; i < meetingBtn.length; i++) {
+  meetingBtn[i].addEventListener("click", function() {
+    emailForm.classList.remove("hide-form");
+  });
+}
+
 // ################################
 // ########## SMOOTH SCROLL #######
 // ################################
@@ -44,13 +59,11 @@ var link = document.querySelectorAll(".nav-item");
 
 for (var i = 0; i < link.length; i++) {
   link[i].addEventListener("click", function() {
-    for (var i = 0; i < link.length; i++) {
-      menuBtn.classList.remove("close");
-      menu.classList.remove("show");
-      menu.classList.add("hide");
-      // set Menu state
-      showMenu = false;
-    }
+    menuBtn.classList.remove("close");
+    menu.classList.remove("show");
+    menu.classList.add("hide");
+    // set Menu state
+    showMenu = false;
   });
 }
 
@@ -94,6 +107,7 @@ $('a[href*="#"]')
   });
 
 // #################################
+// Brand carousel
 
 var owl = $(".owl-carousel");
 owl.owlCarousel({

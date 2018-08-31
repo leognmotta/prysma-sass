@@ -1,0 +1,102 @@
+#email-form {
+  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background: $color-secondary;
+  width: 95%;
+  height: 95%;
+  max-width: 450px;
+  max-height: 540px;
+  padding: 1em;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+
+  .menu-btn-form {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: block;
+
+    .btn-line {
+      margin-left: 100%;
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background-color: $white;
+
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+
+    // Rotate Into X Menu Lines
+    &.close {
+      transform: rotate(180deg);
+    }
+  }
+
+  embed {
+    display: block;
+    margin: 10px auto;
+  }
+  input {
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    height: 80px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: none;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #dddddd;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    box-shadow: 0 0 5px $color-primary;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid $color-primary;
+  }
+
+  input[type="submit"] {
+    background: $color-primary;
+    border-color: $color-primary-dark;
+    color: $white;
+  }
+}
+
+.hide-form {
+  display: none;
+}

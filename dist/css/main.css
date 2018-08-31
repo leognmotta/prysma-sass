@@ -900,6 +900,82 @@ header {
       left: 10%;
       top: -125px; } }
 
+#email-form {
+  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background: #121212;
+  width: 95%;
+  height: 95%;
+  max-width: 450px;
+  max-height: 540px;
+  padding: 1em;
+  border: 2px solid #3e9995;
+  border-radius: 10px; }
+  #email-form .menu-btn-form {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: block; }
+    #email-form .menu-btn-form .btn-line {
+      margin-left: 100%;
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background-color: #e8e8e8; }
+      #email-form .menu-btn-form .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      #email-form .menu-btn-form .btn-line:nth-child(2) {
+        opacity: 0; }
+      #email-form .menu-btn-form .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); }
+    #email-form .menu-btn-form.close {
+      transform: rotate(180deg); }
+  #email-form embed {
+    display: block;
+    margin: 10px auto; }
+  #email-form input {
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px; }
+  #email-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    height: 80px; }
+  #email-form input[type="text"],
+  #email-form input[type="email"],
+  #email-form textarea {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: none;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #dddddd; }
+  #email-form input[type="text"]:focus,
+  #email-form input[type="email"]:focus,
+  #email-form textarea:focus {
+    box-shadow: 0 0 5px #3e9995;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #3e9995; }
+  #email-form input[type="submit"] {
+    background: #3e9995;
+    border-color: #378783;
+    color: #e8e8e8; }
+
+.hide-form {
+  display: none; }
+
 footer {
   background: #000;
   margin-top: 16em; }
