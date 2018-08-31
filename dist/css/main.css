@@ -901,7 +901,6 @@ header {
       top: -125px; } }
 
 #email-form {
-  position: absolute;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -916,7 +915,8 @@ header {
   max-height: 540px;
   padding: 1em;
   border: 2px solid #3e9995;
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow-y: auto; }
   #email-form .menu-btn-form {
     position: absolute;
     z-index: 100;
@@ -959,6 +959,7 @@ header {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none;
     margin: 5px 1px 3px 0px;
     border: 1px solid #dddddd; }
@@ -971,7 +972,8 @@ header {
   #email-form input[type="submit"] {
     background: #3e9995;
     border-color: #378783;
-    color: #e8e8e8; }
+    color: #e8e8e8;
+    cursor: pointer; }
 
 .hide-form {
   display: none; }
